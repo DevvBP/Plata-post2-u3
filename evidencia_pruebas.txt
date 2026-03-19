@@ -1,0 +1,68 @@
+﻿[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------< com.universidad:tienda-patrones-estructurales >------------
+[INFO] Building tienda-patrones-estructurales 1.0.0
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- clean:3.3.2:clean (default-clean) @ tienda-patrones-estructurales ---
+[INFO] Deleting C:\Users\usuario\Desktop\Plata-post2-u3\target
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ tienda-patrones-estructurales ---
+[INFO] Copying 1 resource from src\main\resources to target\classes
+[INFO] Copying 0 resource from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.11.0:compile (default-compile) @ tienda-patrones-estructurales ---
+[INFO] Changes detected - recompiling the module! :source
+[INFO] Compiling 12 source files with javac [debug release 17] to target\classes
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ tienda-patrones-estructurales ---
+[INFO] skip non existing resourceDirectory C:\Users\usuario\Desktop\Plata-post2-u3\src\test\resources
+[INFO] 
+[INFO] --- compiler:3.11.0:testCompile (default-testCompile) @ tienda-patrones-estructurales ---
+[INFO] Changes detected - recompiling the module! :dependency
+[INFO] Compiling 1 source file with javac [debug release 17] to target\test-classes
+[INFO] 
+[INFO] --- surefire:3.1.2:test (default-test) @ tienda-patrones-estructurales ---
+[INFO] Using auto detected provider org.apache.maven.surefire.junitplatform.JUnitPlatformProvider
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running com.universidad.tienda.DecoratorTest
+[AUDITORIA] [2026-03-19 10:21:21] Inicio de procesamiento - Orden:  | Monto: $25000.0
+[VALIDACION] Validando orden: 
+? TC-03 PASADO: Excepcion correcta para ID vacio: El ID de la orden no puede ser nulo o vacÝo
+[AUDITORIA] [2026-03-19 10:21:21] Inicio de procesamiento - Orden: null | Monto: $25000.0
+[VALIDACION] Validando orden: null
+? TC-03b PASADO: Excepcion correcta para ID nulo: El ID de la orden no puede ser nulo o vacÝo
+[LOGGING] Iniciando procesamiento de orden: ORD-004 | Monto: $5000.0
+[BASE] Procesando orden ORD-004 por monto: $5000.0
+[LOGGING] Orden procesada exitosamente: ORDEN_PROCESADA:ORD-004:$5000.0
+? TC-04 PASADO: Decorador individual funciona. Resultado: ORDEN_PROCESADA:ORD-004:$5000.0
+[AUDITORIA] [2026-03-19 10:21:22] Inicio de procesamiento - Orden: ORD-001 | Monto: $15000.0
+[VALIDACION] Validando orden: ORD-001
+[VALIDACION] Orden ORD-001 aprobada. Monto $15000.0 dentro del rango.
+[LOGGING] Iniciando procesamiento de orden: ORD-001 | Monto: $15000.0
+[BASE] Procesando orden ORD-001 por monto: $15000.0
+[LOGGING] Orden procesada exitosamente: ORDEN_PROCESADA:ORD-001:$15000.0
+[AUDITORIA] [2026-03-19 10:21:22] Fin de procesamiento - Resultado: ORDEN_PROCESADA:ORD-001:$15000.0
+? TC-01 PASADO: Orden vßlida procesada. Resultado: ORDEN_PROCESADA:ORD-001:$15000.0
+[AUDITORIA] [2026-03-19 10:21:22] Inicio de procesamiento - Orden: ORD-002 | Monto: $500.0
+[VALIDACION] Validando orden: ORD-002
+? TC-02 PASADO: Excepcion correcta para monto invalido: El monto $500.0 estß fuera del rango permitido [$1000.0 - $5.0E7]
+[AUDITORIA] [2026-03-19 10:21:22] Inicio de procesamiento - Orden: ORD-002 | Monto: $6.0E7
+[VALIDACION] Validando orden: ORD-002
+? TC-02b PASADO: Excepcion correcta para monto muy alto: El monto $6.0E7 estß fuera del rango permitido [$1000.0 - $5.0E7]
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.106 s -- in com.universidad.tienda.DecoratorTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  4.494 s
+[INFO] Finished at: 2026-03-19T10:21:22-05:00
+[INFO] ------------------------------------------------------------------------
